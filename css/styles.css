@@ -1,7 +1,25 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
+  width: 1440px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .page-logo-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -11,15 +29,27 @@ body {
   text-decoration: none;
   color: #2e2f42;
   background-color: white;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
-.logo{
+.logo {
   color: #4d5ae5;
 }
-
+.container {
+  max-width: 1154px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.page-menu-list .link {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+}
 .page-menu-list a {
   text-decoration: none;
   color: #2e2f42;
-  background-color:white;
+  background-color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5em;
@@ -27,11 +57,21 @@ body {
 }
 .page-menu-list li {
   list-style-type: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .page-menu-list a:hover {
   color: #404bbf;
 }
+.page-menu-list {
+  text-align: center;
+  display: flex;
+}
 
+.address-list {
+  display: flex;
+}
 .address-list a {
   text-decoration: none;
   color: #434455;
@@ -47,18 +87,33 @@ body {
 .address-list a:hover {
   color: #404bbf;
 }
+
 .header {
   font-weight: 700;
   font-size: 56px;
-  line-height: 3.75em;
+  line-height: 1;
   letter-spacing: 2%;
   text-align: center;
   color: white;
-  background-color:#2e2f42;
+  background-color: #2e2f42;
+  width: 496px;
+  height: 120px;
+  padding-top: 100px;
+  padding-left: 472px;
+}
+
+header .container {
+  display: flex;
+}
+main footer {
+  width: 1154px;
 }
 .head-button {
-  background-color:#2e2f42 ;
+  background-color: #2e2f42;
+  width: 1440px;
+  height: 600px;
 }
+
 .button {
   background-color: #4d5ae5;
   color: white;
@@ -67,9 +122,21 @@ body {
   line-height: 1em;
   letter-spacing: 4%;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  margin-top: 300px;
+  margin-left: 636px;
 }
 .button:hover {
   background-color: #404bbf;
+}
+.section-part {
+  display: flex;
+  width: 1128px;
+  height: 104px;
+  padding: 0 120px;
+  gap: 0px;
 }
 .section-part h2 {
   font-weight: 500;
@@ -98,7 +165,7 @@ body {
   letter-spacing: 2%;
   text-align: center;
   color: #2e2f42;
-  background-color:#f4f4fd;
+  background-color: #f4f4fd;
 }
 .team-part {
   font-weight: 500;
@@ -109,8 +176,17 @@ body {
   color: #2e2f42;
   list-style-type: none;
   background-color: #f4f4fd;
+  display: flex;
+  width: 264px;
+  height: 380px;
+  top: 1248px;
+  left: 156px;
+  padding: 0px 0px 32px 0px;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  opacity: 0px;
 }
-.team-part h3{
+.team-part h3 {
   background-color: white;
   font-weight: 500;
   font-size: 20px;
@@ -136,6 +212,7 @@ body {
   text-align: center;
   color: #2e2f42;
   background-color: white;
+  
 }
 .portfolio-class {
   list-style-type: none;
@@ -145,9 +222,10 @@ body {
   letter-spacing: 2%;
   color: #2e2f42;
   background-color: white;
+  
 }
 
-.portfolio-class h3{
+.portfolio-class h3 {
   list-style-type: none;
   font-weight: 500;
   font-size: 20px;
@@ -164,7 +242,7 @@ body {
   color: #434455;
   background-color: white;
 }
-footer{
+footer {
   background-color: #2e2f42;
 }
 footer p {
