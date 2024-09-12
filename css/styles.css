@@ -1,7 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
-  width: 1440px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -9,22 +13,36 @@ h3,
 h4,
 h5,
 h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
+ol,
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  list-style: none;
+}
+img{
+  display: block;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
 }
 
 .page-logo-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.325em;
+  line-height: 1.325;
   letter-spacing: 3%;
   text-decoration: none;
   color: #2e2f42;
@@ -36,16 +54,29 @@ ul {
 .logo {
   color: #4d5ae5;
 }
-.container {
+.header {
+  width: 1154px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+.container-header {
   max-width: 1154px;
   margin: 0 auto;
   padding: 0 16px;
+  display: flex;
 }
-.page-menu-list .link {
-  display: block;
-  padding: 8px 12px;
-  text-decoration: none;
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+.link {
+  padding: 24px 0;
+}
+
 .page-menu-list a {
   text-decoration: none;
   color: #2e2f42;
@@ -57,9 +88,12 @@ ul {
 }
 .page-menu-list li {
   list-style-type: none;
-  display: inline-block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
 }
 .page-menu-list a:hover {
   color: #404bbf;
@@ -71,6 +105,8 @@ ul {
 
 .address-list {
   display: flex;
+  gap: 40px;
+  align-items: center;
 }
 .address-list a {
   text-decoration: none;
@@ -78,8 +114,12 @@ ul {
   background-color: white;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5em;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  letter-spacing: -2%;
+}
+.mail {
+  margin-left: 330px;
+  margin-right: 24px;
 }
 .address-list li {
   list-style-type: none;
@@ -88,33 +128,36 @@ ul {
   color: #404bbf;
 }
 
-.header {
+.section1-header {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1;
   letter-spacing: 2%;
   text-align: center;
   color: white;
   background-color: #2e2f42;
-  width: 496px;
+  max-width: 496px;
   height: 120px;
-  padding-top: 100px;
-  padding-left: 472px;
+  left: 472px;
+  margin: auto;
+  margin-bottom: 48px;
+  text-align: center;
+  align-items: center;
 }
 
-header .container {
-  display: flex;
-}
-main footer {
-  width: 1154px;
-}
-.head-button {
+.section1 {
   background-color: #2e2f42;
   width: 1440px;
   height: 600px;
+  top: 72px;
+  margin: auto;
+  padding: 188px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.button {
+.button-type {
   background-color: #4d5ae5;
   color: white;
   font-weight: 500;
@@ -122,21 +165,21 @@ main footer {
   line-height: 1em;
   letter-spacing: 4%;
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
-  margin-top: 300px;
-  margin-left: 636px;
+  border: none;
+  margin: auto;
+  display: block;
 }
-.button:hover {
+.button-type:hover {
   background-color: #404bbf;
 }
 .section-part {
   display: flex;
-  width: 1128px;
-  height: 104px;
-  padding: 0 120px;
-  gap: 0px;
+  width: 1154px;
+  padding: 120px 140px;
+  gap: 8px;
 }
 .section-part h2 {
   font-weight: 500;
@@ -161,11 +204,12 @@ main footer {
 .heading-team {
   font-weight: 700;
   font-size: 36px;
-  line-height: 2.5em;
+  line-height: 2.5;
   letter-spacing: 2%;
   text-align: center;
   color: #2e2f42;
   background-color: #f4f4fd;
+  width: 1440px;
 }
 .team-part {
   font-weight: 500;
@@ -177,32 +221,40 @@ main footer {
   list-style-type: none;
   background-color: #f4f4fd;
   display: flex;
+}
+.team-part li {
+  display: inline-block;
   width: 264px;
   height: 380px;
   top: 1248px;
   left: 156px;
   padding: 0px 0px 32px 0px;
+  margin-bottom: 40px;
   gap: 32px;
   border-radius: 0px 0px 4px 4px;
   opacity: 0px;
+  
 }
 .team-part h3 {
   background-color: white;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 2%;
   text-align: center;
   color: #2e2f42;
+  
+  
 }
 .team-part p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 2%;
   text-align: center;
   color: #434455;
   background-color: white;
+  
 }
 .heading-portfolio {
   font-weight: 700;
@@ -212,7 +264,6 @@ main footer {
   text-align: center;
   color: #2e2f42;
   background-color: white;
-  
 }
 .portfolio-class {
   list-style-type: none;
@@ -222,7 +273,6 @@ main footer {
   letter-spacing: 2%;
   color: #2e2f42;
   background-color: white;
-  
 }
 
 .portfolio-class h3 {
