@@ -120,12 +120,16 @@ img {
   line-height: 1.5;
   letter-spacing: -2%;
 }
-.mail {
+.adress-information{
+  display: flex;
+  gap: 40px;
+}
+.mail-information {
   margin-left: 300px;
   margin-right: 24px;
   gap: 40px;
 }
-.tel {
+.tel-information {
   margin-right: 156px;
   gap: 40px;
 }
@@ -136,7 +140,7 @@ img {
   color: #404bbf;
 }
 
-.header-section1 {
+.head-of-section1 {
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 2%;
@@ -152,7 +156,7 @@ img {
   align-items: center;
 }
 
-.section1-section {
+.part-of-section1 {
   background-color: #2e2f42;
   width: 1440px;
   height: 600px;
@@ -183,7 +187,7 @@ img {
 .button-type:hover {
   background-color: #404bbf;
 }
-.section2-section {
+.part-of-section2 {
   padding: 120px 0;
 }
 .visually-hidden {
@@ -251,7 +255,7 @@ img {
   align-items: center;
 }
 
-.section3-section {
+.part-of-section3 {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
@@ -300,10 +304,10 @@ img {
   margin-bottom: 72px;
   margin-top: 120px;
 }
-.section4-section {
+.part-of-section4 {
   padding-bottom: 120px;
 }
-.section4-section li {
+.part-of-section4 li {
   width: 360px;
   height: 420px;
 }
