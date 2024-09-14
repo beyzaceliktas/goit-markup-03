@@ -37,7 +37,6 @@ img {
   padding: 0 15px;
   align-items: center;
 }
-
 .page-logo-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -54,10 +53,9 @@ img {
 }
 .logo-class {
   color: #4d5ae5;
-  margin-left: 156px;
+  margin-left: 0;
 }
 .header {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,14 +75,13 @@ img {
 .link {
   padding: 24px 0;
 }
-
 .page-menu-list a {
   text-decoration: none;
   color: #2e2f42;
-  background-color: white;
+
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 2%;
 }
 .page-menu-list li {
@@ -119,27 +116,25 @@ img {
   line-height: 1.5;
   letter-spacing: -2%;
 }
-.adress-information{
+.adress-information {
   display: flex;
   gap: 40px;
 }
 .mail-information {
-  margin-left: 300px;
-  margin-right: 24px;
+  margin-left: 200px;
   gap: 40px;
+  margin-right: 20px;
 }
-.tel-information {
-  margin-right: 156px;
-  gap: 40px;
-}
+
 .address-list li {
   list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 .address-list a:hover {
   color: #404bbf;
 }
-
-.head-of-section1 {
+.head-of-first-section {
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 2%;
@@ -155,10 +150,9 @@ img {
   align-items: center;
 }
 
-.part-of-section1 {
+.first-section {
   background-color: #2e2f42;
-  
-  
+
   margin: auto;
   padding: 188px 0;
   align-items: center;
@@ -185,7 +179,7 @@ img {
 .button-type:hover {
   background-color: #404bbf;
 }
-.part-of-section2 {
+.second-section {
   padding: 120px 0;
 }
 .visually-hidden {
@@ -253,7 +247,7 @@ img {
   align-items: center;
 }
 
-.part-of-section3 {
+.third-section {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
@@ -266,7 +260,6 @@ img {
   box-shadow: 0px 1px 1px 0px #2e2f4214;
   box-shadow: 0px 1px 6px 0px #2e2f4214;
   text-align: center;
-  
 }
 .team-information {
   padding: 32px 0;
@@ -301,10 +294,9 @@ img {
   margin-bottom: 72px;
   margin-top: 120px;
 }
-.part-of-section4 {
-  padding-bottom: 120px;
+.fourth-section {
+  padding: 120px 0;
 }
-
 
 .portfolio-class {
   list-style-type: none;
@@ -320,7 +312,6 @@ img {
   column-gap: 24px;
 }
 .explanation-of-portfolio {
-  
   padding: 32px 16px 32px 16px;
   gap: 8px;
   border: 1px solid #e7e9fc;
@@ -356,7 +347,6 @@ img {
   letter-spacing: 2%;
   color: #f4f4fd;
   max-width: 264px;
-  
 }
 .title-footer {
   font-family: "Raleway";
