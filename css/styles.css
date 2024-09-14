@@ -302,6 +302,9 @@ img {
   row-gap: 48px;
   column-gap: 24px;
 }
+.head-portfolio {
+  margin-bottom: 8px;
+}
 .explanation-of-portfolio {
   padding: 32px 16px 32px 16px;
   gap: 8px;
