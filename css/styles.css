@@ -32,9 +32,9 @@ img {
   display: block;
 }
 .container {
-  width: 1158px;
-  margin: 0 auto;
   padding: 0 15px;
+  margin: 0 auto;
+  width: 1158px;
   align-items: center;
 }
 .page-logo-title {
@@ -101,7 +101,6 @@ img {
   display: flex;
   gap: 40px;
 }
-
 .address-list {
   display: flex;
   gap: 40px;
@@ -125,7 +124,6 @@ img {
   gap: 40px;
   margin-right: 20px;
 }
-
 .address-list li {
   list-style-type: none;
   display: flex;
@@ -149,7 +147,6 @@ img {
   text-align: center;
   align-items: center;
 }
-
 .first-section {
   background-color: #2e2f42;
 
@@ -160,7 +157,6 @@ img {
   flex-direction: column;
   justify-content: center;
 }
-
 .button-type {
   background-color: #4d5ae5;
   color: white;
@@ -211,7 +207,6 @@ img {
   background-color: white;
   margin-bottom: 8px;
 }
-
 .section-part-explanation li {
   list-style-type: none;
 }
@@ -246,12 +241,10 @@ img {
   gap: 24px;
   align-items: center;
 }
-
 .third-section {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
-
 .list-of-team-part {
   list-style-type: none;
   border-radius: 0px 0px 4px 4px;
@@ -292,12 +285,10 @@ img {
   color: #2e2f42;
   background-color: white;
   margin-bottom: 72px;
-  margin-top: 120px;
 }
 .fourth-section {
   padding: 120px 0;
 }
-
 .portfolio-class {
   list-style-type: none;
   font-weight: 500;
@@ -314,10 +305,10 @@ img {
 .explanation-of-portfolio {
   padding: 32px 16px 32px 16px;
   gap: 8px;
+  margin-bottom: 8px;
   border: 1px solid #e7e9fc;
   text-align: left;
   border-top: none;
-  margin-bottom: 8px;
 }
 .portfolio-class h3 {
   list-style-type: none;
