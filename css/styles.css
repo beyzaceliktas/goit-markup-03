@@ -60,7 +60,7 @@ img {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
-  height: 72px;
+  padding: 12px;
 }
 .container-header {
   max-width: 1154px;
